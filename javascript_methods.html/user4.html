@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=5
+        var b=7
+        
+        const mathQA = {
+    question: "What is 5 + 7 ?",
+    answer: a+b,
+    ask: function() {
+        document.write(this.question+"<br>");
+    },
+
+    revealAnswer: function() {
+        document.write( "the answer is"+" "+this.answer);
+    }
+};
+mathQA.ask()
+mathQA.revealAnswer()
+    </script>
+</body>
+</html>

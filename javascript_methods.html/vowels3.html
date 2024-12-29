@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var word="hello"
+       var count=0
+       var vowels="aeiouAEIOU"
+       for(i=0;i<word.length;i++){
+        for(x=0;x<vowels.length;x++){
+            if (word[i]==vowels[x]){
+                count++
+            }
+        }
+        document.write(count)
+       }
+    </script>
+</body>
+</html>

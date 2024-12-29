@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const qa = {
+    question: "What is the capital of France?",
+    answer: "The capital of France is Paris.",
+
+    ask: function () {
+        document.write(this.question+"<br>");
+    },
+
+    revealAnswer: function() {
+        document.write(this.answer+"<br>");
+    }
+};
+qa.ask()
+qa.revealAnswer()
+    </script>
+</body>
+</html>

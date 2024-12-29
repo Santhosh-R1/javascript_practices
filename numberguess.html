@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guess the Number from 1 to 10</h1>
+    <input type="number" name="" id="num1">
+    <button onclick="Click()">Check</button>
+<p id="show">Answer</p>
+<p id="totalscore">Your Score:10</p>
+
+<script>
+var box1=document.getElementById("num1")
+var show=document.getElementById("show")
+ var tscore=document.getElementById("totalscore")
+var randomnumber= Math.floor(Math.random()*10)+1
+var totalscore=10
+function Click(){
+var enterednum=num1.value
+if(randomnumber==enterednum){
+    console.log("Right");
+    show.textContent="Right"
+    alert("YOU WON")
+}
+else{
+    
+    tscore=tscore-1
+    show.textContent="result:"+tscore
+     show.textContent="Wrong"
+     alert("YOU WRONG")
+    }
+     
+}
+</script>
+</body>
+</html>
